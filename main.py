@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select, WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-import config
+from authorization import Authorization
 
 browser_path = "Program Files (x86)\Google\Chrome\Application"
 full_browser_path = os.path.join("C:/", browser_path)
@@ -23,7 +23,9 @@ except FileNotFoundError as e:
 
 class Irctc:
 	def __init__(self):
-		print('as')
+		print('ass')
 		
 if __name__ == '__main__':
-	econfigs
+	auth = Authorization()
+	webdriver.Firefox(executable_path='/usr/local/bin/geckodriver')
+	print(auth.__crackPassword())
